@@ -1,0 +1,110 @@
+/* Project Name: myMoneyCircle Platform */
+/* Project URL: https://app.mymoneycircle.au/ */
+/* Develop by: Ajay Gorecha */
+/* Developer URL: https://www.ajaygorecha.com/ */
+
+$primaryColor: #1DA0FF
+$whiteColor: #fff
+$secoundyColor: #00305C
+$baseColor: #f1f3f6
+$pColor: #2F2F30
+$blackColor: #000
+$font: 'Roboto', sans-serif
+$boxShadow: 0px 0px 50px rgba(0, 0, 0, 0.1)
+$radius: 12px
+$greyColor: #DCDFDD
+$textGrey: #A5ADBA
+
+/* Brand Colors */
+$info: #0364FF
+$danger: #FF6F61
+$success: #74DB6B
+$warning: #FFB421
+
+$infoLight: #DEEBFF
+$dangerLight: #FFEBE6
+$successLight: #E3FCEF
+$warningLight: #FFFAE6
+$secoundyLight: #DFE1E6
+
+
+*,*,*:after,*:before
+    margin: 0
+    padding: 0
+    position: relative
+    box-sizing: border-box
+    transition: all 0.2s ease-in-out
+
+::selection
+    background-color: $primaryColor
+    color: $whiteColor
+
+html,body
+    font-family: $font !important
+    font-weight: 400
+    scroll-behavior: smooth
+    @media (max-width: 768px)
+        overflow-x: hidden !important
+
+html.nprogress-busy
+    overflow: hidden
+
+h1,h2,h3,h4,h5,h6
+    font-weight: 700
+
+div,header,nav,footer,section,aside,article
+    display: block
+
+a
+    color: $primaryColor
+    text-decoration: none
+    transition: all 0.05s ease-in !important
+    font-size: 1rem
+    &:hover
+        text-decoration: none !important
+        color: $secoundyColor
+
+p
+    font-size: 1rem
+    color: $pColor
+    font-weight: 400
+    @media (max-width: 576px)
+        font-size: 14px
+
+ul
+    margin: 0
+    padding: 0
+    li
+        list-style-type: none
+        font-size: 1rem
+        position: relative
+
+img
+    width: 100%
+
+hr
+    border-color: $baseColor
+    opacity: 1
+
+
+.main-content
+    background-color: $blackColor
+    .gallery
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(calc( 33.33% - 40px ), 1fr))
+        grid-gap: 20px
+        .image-container
+            overflow: hidden
+            border-radius: 24px
+            &:hover
+                cursor: pointer
+                img
+                    filter: grayscale(100%)
+        .loop-item
+            display: grid
+            grid-gap: 20px
+            img
+                border-radius: 24px
+
+    .load-more
+        padding: 50px 0

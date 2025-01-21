@@ -1,0 +1,115 @@
+/* Project Name: myMoneyCircle Platform */
+/* Project URL: https://app.mymoneycircle.au/ */
+/* Develop by: Ajay Gorecha */
+/* Developer URL: https://www.ajaygorecha.com/ */
+/* Brand Colors */
+*, *, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+::-moz-selection {
+  background-color: #1DA0FF;
+  color: #fff;
+}
+
+::selection {
+  background-color: #1DA0FF;
+  color: #fff;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+}
+
+html.nprogress-busy {
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+div, header, nav, footer, section, aside, article {
+  display: block;
+}
+
+a {
+  color: #1DA0FF;
+  text-decoration: none;
+  transition: all 0.05s ease-in !important;
+  font-size: 1rem;
+}
+a:hover {
+  text-decoration: none !important;
+  color: #00305C;
+}
+
+p {
+  font-size: 1rem;
+  color: #2F2F30;
+  font-weight: 400;
+}
+@media (max-width: 576px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+  font-size: 1rem;
+  position: relative;
+}
+
+img {
+  width: 100%;
+}
+
+hr {
+  border-color: #f1f3f6;
+  opacity: 1;
+}
+
+.main-content {
+  background-color: #000;
+}
+.main-content .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 40px), 1fr));
+  grid-gap: 20px;
+}
+.main-content .gallery .image-container {
+  overflow: hidden;
+  border-radius: 24px;
+}
+.main-content .gallery .image-container:hover {
+  cursor: pointer;
+}
+.main-content .gallery .image-container:hover img {
+  filter: grayscale(100%);
+}
+.main-content .gallery .loop-item {
+  display: grid;
+  grid-gap: 20px;
+}
+.main-content .gallery .loop-item img {
+  border-radius: 24px;
+}
+.main-content .load-more {
+  padding: 50px 0;
+}/*# sourceMappingURL=style.css.map */
